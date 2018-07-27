@@ -1,3 +1,4 @@
+// data types
 //string
 let fullName: string = 'Nate Murray';
 // number
@@ -30,6 +31,7 @@ we can even set individual values:
 */
 enum Role {Employee, Manager, Admin};
 let role: Role = Role.Employee;
+// user.role === role ? '' : ''
 console.log('role: ', role);
 
 // Template string
@@ -39,8 +41,8 @@ let dummyContent = `content: ${dummy}`;
 // object
 const obj = { first: 1, second: 'hi' };
 const { first: f, second: b } = obj;
+console.log('---Object');
 console.log('f: ', f, ', b: ', b);
-
 const { first, second } = obj;
 console.log('first: ', first, ', second: ', second);
 
@@ -49,11 +51,19 @@ const obj3  = {
   name: 'wamd',
 };
 console.log('obj3 ', obj3);
+//---
+const firstName = 'F';
+const lastName = 'L';
+const obj4 = {
+  firstName, // <== firstName: firstName
+  lastName // <== lastName: lastName
+};
 //
 
 // array
 const arr = [1, 'a', 'c', 'e'];
 const [x, y, ...rest] = arr;
+console.log('--Array ');
 console.log('x: ', x, ', y: ', y, 'rest: ', rest);
 //
 
@@ -77,7 +87,7 @@ const sepFunc = (...params: any[]) => {
   console.log('params: ', params);
   console.log('params[0]: ', params[0])
 };
-
+console.log('--Arrow Function ');
 sepFunc(1, 3, 5, 54);
 
 // functions and return type;
@@ -86,4 +96,4 @@ const sqr: Function = (a: number): number => {
 };
 const log: Function = (msg: string): void => {
   console.log('Log: ', msg)
-}
+};
