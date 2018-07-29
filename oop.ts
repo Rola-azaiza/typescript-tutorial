@@ -44,7 +44,7 @@ class Person2 {
 interface Human {
   firstName: string;
   lastName: string;
-  age?: number;
+  age?: number;// optional age
 }
 
 class Person3 implements Human {
