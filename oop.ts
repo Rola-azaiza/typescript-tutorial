@@ -26,7 +26,7 @@ const tom: Animal = new Horse("Tommy the Palomino")
 sam.move();
 tom.move(34);
 // ----
-// Person1 === Person2
+// same to each other Person1 === Person2
 class Person1 {
   private firstName: string;
   private lastName: string;
