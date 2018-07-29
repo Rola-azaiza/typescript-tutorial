@@ -6,7 +6,7 @@ function OldPerson(firstName, lastName) {
 //Each object has a private property which holds a link to another object called its prototype.
 // Nearly all objects in JavaScript are instances of Object;
 // a typical object inherits properties (including methods) from Object.prototype.
-OldPerson.prototype.sayHi = function () {
+OldPerson.prototype.sayHi = function () {// all objects inherents prototype and i declare afunctin called sayhi
   return 'Hi'
 };
 
